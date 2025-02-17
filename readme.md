@@ -44,7 +44,7 @@ GET http://localhost:8080/accounts/1/transactions?startDate=2025-01-15&endDate=2
 
 ### POST: Add Transaction
 
-This endpoint allows you to add a new transaction to an account. Transactions can either be a **deposit** or a **withdrawal** based on the request details.
+This endpoint allows you to add a new transaction to an account. Transactions can either be a **Deposit** or a **Withdrawal** based on the request details.
 
 **URL:**
 `/accounts/{accountId}/transactions`
@@ -54,6 +54,6 @@ This endpoint allows you to add a new transaction to an account. Transactions ca
 ```json
 {
   "accountId": 1,
-  "transactionType": "Deposit",
+  "transactionType": "Deposit", // "Withdrawal"
   "amount": 100.02
 }

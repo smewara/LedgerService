@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * The {@code AccountController} class is a Spring REST Controller that
+ * exposes various endpoints to manage accounts and their transactions.
+ * It provides functionalities like creating accounts, fetching account balance,
+ * retrieving transaction history, and adding new transactions.
+ */
 @RestController
 @RequestMapping(AccountController.BASE_URL)
 public class AccountController {
