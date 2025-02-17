@@ -1,7 +1,7 @@
-# TeyaLedgerService API Documentation
+# LedgerService API Documentation
 
 ## Introduction
-TeyaLedgerService is a simple API that allows you to create an account, check balance, add transaction, and retrieve transaction history. Below are the available endpoints with detailed descriptions of their functionality.
+LedgerService is a simple API that allows you to create an account, check balance, add transaction, and retrieve transaction history. Below are the available endpoints with detailed descriptions of their functionality.
 
 ## Endpoints
 
