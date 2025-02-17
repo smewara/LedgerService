@@ -35,11 +35,11 @@ GET http://localhost:8080/accounts/1/balance
 This endpoint allows you to retrieve the transactions of a specific account between specified dates.
 
 **URL:**  
-`/accounts/{accountId}/transactions?startDate=&endDate=`
+`/accounts/{accountId}/transactions?startDate={startDate}&endDate={endDate}`
 
 **Example Request:**
 ```
-GET http://localhost:8080/accounts/1/transactions?startDate=2025-01-15&endDate=2025-02-17```
+GET http://localhost:8080/accounts/1/transactions?startDate=2025-01-15&endDate=2025-02-17
 ```
 
 ### POST: Add Transaction
@@ -49,11 +49,20 @@ This endpoint allows you to add a new transaction to an account. Transactions ca
 **URL:**
 `/accounts/{accountId}/transactions`
 
-**Example Request Body:**
-
+**Example Request Bodies:**
+#### Deposit
 ```json
 {
   "accountId": 1,
-  "transactionType": "Deposit", // "Withdrawal"
+  "transactionType": "Deposit",
   "amount": 100.02
 }
+```
+#### Withdrawal
+```json
+{
+  "accountId": 1,
+  "transactionType": "Withdrawal",
+  "amount": -100
+}
+```
