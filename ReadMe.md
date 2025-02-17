@@ -1,7 +1,7 @@
 # LedgerService API Documentation
 
 ## Introduction
-LedgerService is a simple API that allows you to create an account, check balance, add transaction, and retrieve transaction history. Below are the available endpoints with detailed descriptions of their functionality.
+LedgerService is a collection of APIs that allows you to create an account, check balance, add transaction, and retrieve transaction history. Below are the available endpoints with detailed descriptions of their functionality.
 
 ## Endpoints
 
